@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 100%;
+    font-size: 2rem;
+    margin: .5rem;
+    padding: .5rem;
+    color: white;
+}
+
+.navbar-links ul {
+    margin: 0;
+    display: flex;
+}
+
+.navbar-links ul li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    font-size: 1.15rem;
+    padding: 1.75rem;
+    display: block;
+    color: white;
+}
+
+.navbar-links li:hover {
+    background-color: darkgray;
+}
+
+.toggle-button {
+    position: absolute;
+    display: none;
+    top: 1.5rem;
+    right: 2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+@media (max-width: 750px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        width: 100%;
+        display: none;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+        margin-left: -50px;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+.me {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+a {
+    color: black;
+}
+
+#tictactoe {
+    width: 100%;
+    border-style: solid;
+    border-radius: 10%;
+}
+
+#website {
+    width: 90%;
+    border-style: solid;
+    border-radius: 5%;
+}
+
+#dating {
+    width: 100%;
+    border-style: solid;
+    border-radius: 10%;
+}
+
+p {
+    font-size: 15pt;
+    color: rgb(100, 100, 100);
+}
+
+section {
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+h2 {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 20pt;
+    border-bottom: 2px solid;
+}
+
+article {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+article div {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+    text-decoration: none;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.icon {
+    font-size: 2rem;
+}
