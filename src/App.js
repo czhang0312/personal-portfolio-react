@@ -60,13 +60,13 @@ const projects = <section class="project-section" id="projects">
     </article>
 
     <article>
-        <a href="https://github.com/czhang0312/TicTacToe">
+        <a href="https://github.com/czhang0312/personal-portfolio-react">
             <img src="website.png" alt="my website" id="website" />
         </a>
         <div>
             <h3>Personal Website</h3>
-            <p>I created this project from scratch (no templates) using HTML, CSS, and JS. Some cool
-                cool features include a hamburger menu for the navbar when the window is small enough.
+            <p>I first created this project from scratch using bare HTML/CSS Javascript. But recently I
+                migrated my website to React, which you are viewing now.
             </p>
         </div>
     </article>
