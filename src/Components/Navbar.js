@@ -3,7 +3,7 @@ import React from "react";
 export default function createNavbar() {
     return (<nav className="navbar">
                 <div className="logo">Clark Zhang</div>
-                <a href="#" className="toggle-button">
+                <a href="#" className="toggle-button" onClick={handleClick}>
                     <span className="bar"></span>
                     <span className="bar"></span>
                     <span className="bar"></span>
@@ -18,3 +18,8 @@ export default function createNavbar() {
                 </div>
             </nav>);
 };
+
+function handleClick() {
+    const navbarlinks = document.getElementsByClassName('navbar-links')[0];
+    navbarlinks.classList.toggle("active");
+}
