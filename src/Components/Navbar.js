@@ -20,6 +20,6 @@ export default function createNavbar() {
 };
 
 function handleClick() {
-    const navbarlinks = document.getElementsByClassName('navbar-links')[0];
+    const navbarlinks = document.getElementsByClassName("navbar-links")[0];
     navbarlinks.classList.toggle("active");
 }
